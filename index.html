@@ -8,30 +8,97 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold">Michael Godfrey</h1>
-            <p class="mt-2 text-lg">Aspiring Tech Professional</p>
+
+<header class="bg-white py-6">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold">Your Name</h1>
+        <p class="mt-2 text-xl text-gray-600">Aspiring Tech Professional</p>
+    </div>
+</header>
+
+
+
+<main class="container mx-auto px-4 py-8">
+    <!-- About Me Section -->
+    
+
+    <section id="about-me" class="container mx-auto px-4 py-8">
+    <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+        <!-- Image -->
+        <img src="https://via.placeholder.com/200x200" alt="Your Name" class="w-48 h-48 rounded-full object-cover">
+
+        <!-- About Text -->
+        <div>
+            <h2 class="text-3xl font-semibold">About Me</h2>
+            <p class="mt-4 text-gray-700 text-lg">
+                Hi, I'm [Your Name], an aspiring tech professional currently transitioning to a career in software development. 
+                I have a background in [current industry/profession], and I’m passionate about learning and building web technologies like JavaScript, Tailwind, and GraphQL.
+            </p>
+            <p class="mt-4 text-gray-700 text-lg">
+                My focus is on creating fast, minimalist websites that are easy to maintain, and I'm constantly exploring new tools and technologies.
+            </p>
         </div>
-    </header>
+    </div>
+</section>
 
-    <main class="container mx-auto px-4 py-6">
-        <section>
-            <h2 class="text-2xl font-semibold">About Me</h2>
-            <p class="mt-4">A brief introduction about yourself and what you are currently working on.</p>
-        </section>
-
-        <section class="mt-8">
-            <h2 class="text-2xl font-semibold">Current Projects</h2>
-            <p class="mt-4">A summary of your current projects. You can link to the projects page here.</p>
-        </section>
-    </main>
-
-    <footer class="bg-white shadow mt-8">
-        <div class="container mx-auto px-4 py-6">
-            <p class="text-sm">© 2024 Michael Godfrey</p>
+    <!-- Current Projects Section -->
+    <section id="projects" class="mt-12 text-center">
+        <h2 class="text-2xl font-semibold">Current Projects</h2>
+        <p class="mt-4 text-lg text-gray-700">Here are a few of my latest projects. Check them out on GitHub!</p>
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 center">
+        <!-- Project 0 -->
+    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image">
+        
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+            <p class="text-gray-700 mb-4">This is a short description of the project. Briefly describe what the project is about and its main features.</p>
+            <a href="https://github.com/yourusername/project-link" class="text-blue-500 hover:underline">View on GitHub</a>
         </div>
-    </footer>
+    </div>
+    <!-- Project 1 -->
+    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image 1">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+            <p class="text-gray-700 mb-4">This is a short description of project 1. Briefly describe the project.</p>
+            <a href="https://github.com/yourusername/project1" class="text-blue-500 hover:underline">View on GitHub</a>
+        </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image 2">
+        <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+            <p class="text-gray-700 mb-4">This is a short description of project 2. Briefly describe the project.</p>
+            <a href="https://github.com/yourusername/project2" class="text-blue-500 hover:underline">View on GitHub</a>
+        </div>
+    </div>
+    
+    
+</div>
+
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="mt-12 text-center">
+        <h2 class="text-2xl font-semibold">Explore More</h2>
+        <p class="mt-4 text-lg text-gray-700">Read my latest blog posts or get in touch.</p>
+        <div class="mt-6 space-x-4">
+            <a href="/blog.html" class="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600">Read My Blog</a>
+            <a href="/contact.html" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Contact Me</a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>Follow me on <a href="https://github.com/yourusername" class="underline">GitHub</a></p>
+    </div>
+</footer>
+
 
 </body>
 </html>

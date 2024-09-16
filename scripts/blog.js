@@ -1,4 +1,6 @@
 // api link goes here
+const graphqlAPI =
+  "https://ap-southeast-2.cdn.hygraph.com/content/cm0op3u8n02io07uxy6vfccu8/master";
 
 const getPosts = async () => {
     const query = `

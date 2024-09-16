@@ -1,4 +1,6 @@
 // api link goes here
+const graphqlAPI =
+  "https://ap-southeast-2.cdn.hygraph.com/content/cm0op3u8n02io07uxy6vfccu8/master";
 
 // Function to get the slug from the URL
 const getSlugFromUrl = () => {
@@ -62,13 +64,15 @@ const displayPost = async () => {
 
     postContentContainer.innerHTML = `
             <img src="${post.featuredImage.url}" alt="${
-        post.title
-    }" class="w-full h-64 object-cover rounded-md">
+            post.title
+            }" class="w-full h-64 object-cover rounded-md">
             <h2 class="text-3xl font-bold mt-6">${post.title}</h2>
             <p class="text-gray-600 text-sm mt-2">${new Date(
             post.date
             ).toDateString()}</p>
-            <div class="mt-4">${post.content.html}</div>
+            <div class="mt-4 prose prose-lg">
+            ${post.content.html}
+            </div>
         `;
 };
 

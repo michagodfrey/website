@@ -1,0 +1,16 @@
+{
+  "name": "michael-godfrey.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^3.4.11"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0"
+  }
+}

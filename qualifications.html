@@ -10,25 +10,29 @@
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow flex justify-between items-center py-4 px-6">
-        <div class="container mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold">Qualifications</h1>
-            <p class="mt-2 text-lg text-gray-600">A list of the qualifications I've achieved so far.</p>
+    <!-- Header -->
+    <header class="bg-white shadow py-4 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Name and Subtitle -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold">Qualifications</h1>
+                <p class="mt-1 text-lg text-gray-600">A list of the qualifications I've achieved so far.</p>
+            </div>
+            <!-- Navigation -->
+            <nav class="mt-4 md:mt-0">
+                <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
+            </nav>
         </div>
-        <!-- Home Button -->
-        <nav>
-            <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
-        </nav>
     </header>
 
-    <main class="flex-grow container mx-auto px-4 py-8">
+    <main class="flex-grow container mx-auto px-4 pt-6 pb-12">
         <section>
             <h2 class="text-2xl font-semibold text-center mb-8">Certificates</h2>
 
             <!-- Qualifications Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Qualification 1 -->
-                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                     <img class="w-full h-auto object-cover" src="/assets/network+cert.jpg" alt="Network+ Certificate">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Comptia Network+</h3>
@@ -38,7 +42,7 @@
                 </div>
 
                 <!-- Qualification 2 -->
-                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                     <img class="w-full h-auto object-contain" src="/assets/google-it-support-cert.jpg" alt="Qualification 2 Image">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Google IT Support</h3>
@@ -48,7 +52,7 @@
                     </div>
 
                     <!-- Qualification 3 -->
-                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                         <img class="w-full h-auto object-contain" src="/assets/freeCodeCamp-JS-cert.jpg" alt="Qualification 3 Image">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">JavaScript Algorithms and Data Structures</h3>
@@ -58,7 +62,7 @@
                     </div>
 
                     <!-- Qualification 4 -->
-                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                         <img class="w-full h-auto object-contain" src="/assets/treehouse-frontend-cert.jpg" alt="Qualification 4 Image">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Treehouse Frontend Web Development</h3>
@@ -68,7 +72,7 @@
                     </div>
 
                     <!-- Qualification 5 -->
-                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                         <img class="w-full h-auto object-contain" src="/assets/harvard-cs50x-cert.jpg" alt="Qualification 4 Image">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Harvard CS50x Computer Science</h3>

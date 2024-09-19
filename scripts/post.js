@@ -1,4 +1,3 @@
-// api link goes here
 const graphqlAPI =
   "https://ap-southeast-2.cdn.hygraph.com/content/cm0op3u8n02io07uxy6vfccu8/master";
 
@@ -48,7 +47,7 @@ const displayPost = async () => {
     const slug = getSlugFromUrl();
     if (!slug) {
         document.getElementById("post-content").innerHTML =
-        "<p>Post not found.</p>";
+        "<p>Post not found :(</p>";
         return;
     }
 
@@ -56,7 +55,7 @@ const displayPost = async () => {
 
     if (!post) {
         document.getElementById("post-content").innerHTML =
-        "<p>Post not found.</p>";
+        "<p>Post not found :(</p>";
         return;
     }
 

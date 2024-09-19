@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags and links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Godfrey - Contact</title>
     <link rel="preload" href="src/output.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link href="src/output.css" rel="stylesheet"></noscript>
     <link rel="icon" href="/assets/favicon-32x32.png">
-    <!-- scripts to send email -->
+    <!-- Third party script to send email -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('user_0tagcQ1gmclJDxwAymjso');
+        })();
+    </script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-
-    <div class="flex flex-col min-h-screen">
-        <!-- Updated Header -->
+        <!-- Header -->
         <header class="bg-white shadow py-4 px-6">
             <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <!-- Name and Subtitle -->
@@ -49,10 +52,11 @@
                         <label for="message" class="block text-sm font-medium">Message</label>
                         <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
                     </div>
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md">Send Message</button>
+                    <button type="submit" class="bg-gray-800 hover:bg-gray-600 transition duration-300 text-white px-4 py-2 rounded-md">Send Message</button>
                 </form>
             </section>
         </main>
+        
         <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto text-center">
             <p class="text-lg mb-4">Find me on social media</p>
@@ -77,7 +81,6 @@
             </div>
         </div>
     </footer>
-    </div>
     <script src="scripts/contact.js"></script>
 </body>
 </html>

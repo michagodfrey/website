@@ -1,4 +1,3 @@
-// api link goes here
 const graphqlAPI =
   "https://ap-southeast-2.cdn.hygraph.com/content/cm0op3u8n02io07uxy6vfccu8/master";
 
@@ -30,8 +29,6 @@ const getPosts = async () => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            // If your API requires an auth token, you can add it here:
-            // 'Authorization': `Bearer YOUR_TOKEN`,
         },
         body: JSON.stringify({ query }),
         });
@@ -63,17 +60,17 @@ const displayPosts = async () => {
                 <div class="w-1/2">
                     <h3 class="text-2xl font-bold mt-4">${node.title}</h3>
                     <p class="text-gray-600 text-sm mt-2">${new Date(
-                      node.date
+                        node.date
                     ).toDateString()}</p>
                     <p class="mt-4">${node.excerpt}</p>
                     <a href="/post.html?slug=${
-                      node.slug
+                        node.slug
                     }" class="text-blue-500 hover:underline mt-4 block">Read More &rarr;</a>
                 </div>
                 <div class="w-1/2">
                     <img src="${node.featuredImage.url}" alt="${
                         node.title
-                    }"class="w-full max-w-16 h-48 object-cover rounded-md">
+                    }"class="w-full h-48 object-cover rounded-md">
                 </div>        
         `;
 

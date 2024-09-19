@@ -16,6 +16,9 @@ module.exports = {
     "w-6",
     "h-6", // SVG icon sizes for your footer
     "hover:text-blue-500", // Hover color for icons
+    "mb-6",
+    "w-1/2",
+    "h-64"
   ],
 };
 

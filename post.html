@@ -9,18 +9,22 @@
     <link rel="icon" href="/assets/favicon-32x32.png">
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-
-    <header class="bg-white shadow flex justify-between items-center py-4 px-6">
-        <div class="container mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold">Michael Godfrey - Blog Post</h1>
+    <!-- Header -->
+    <header class="bg-white shadow py-4 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold">Michael Godfrey</h1>
+                <p class="mt-1 text-lg text-gray-600">Blog Post</p>
+            </div>
+            <!-- Home Button -->
+            <nav class="mt-4 md:mt-0">
+                <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
+            </nav>
         </div>
-        <!-- Home Button -->
-        <nav>
-            <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
-        </nav>
     </header>
 
-    <main class="flex-grow container mx-auto px-4 py-6">
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 pt-6 pb-12">
         <section id="post-content">
             <!-- Post content will be dynamically loaded here -->
         </section>

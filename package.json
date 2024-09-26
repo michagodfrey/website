@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal website",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "tailwind": "tailwindcss -i ./src/input.css -o output.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",

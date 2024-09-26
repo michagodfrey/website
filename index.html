@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Godfrey - Home</title>
-    <link rel="preload" href="src/output.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link href="src/output.css" rel="stylesheet"></noscript>
+    <link rel="preload" href="output.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="output.css" rel="stylesheet"></noscript>
     <link rel="icon" href="/assets/favicon-32x32.png">
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
@@ -22,7 +22,7 @@
     <section id="about-me" class="container mx-auto px-4 py-8">
         <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
             <!-- Image -->
-            <img src="https://via.placeholder.com/200x200" alt="Your Name" class="w-48 h-48 rounded-full object-cover">
+            <img src="/assets/mugshot.jpg" alt="Your Name" class="w-48 h-48 rounded-full object-cover">
 
             <!-- About Text -->
             <div>
@@ -43,33 +43,23 @@
         <h2 class="text-2xl font-semibold">Selected Projects</h2>
         <p class="mt-4 mb-8 text-lg text-gray-700">Here are a few of my latest projects. Check them out on GitHub!</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 center">
+
                 <!-- Project 0 -->
                 <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image">
-                    
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project Title</h3>
-                        <p class="text-gray-700 mb-4">This is a short description of the project. Briefly describe what the project is about and its main features.</p>
-                        <a href="https://github.com/yourusername/project-link" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <div class="bg-violet-700">
+                        <a href="https://personality-bot.vercel.app/">
+                            <img class="w-full h-48 object-contain" src="https://personality-bot.vercel.app/assets/robot-600a3040.webp" alt="Project Image">
+                        </a>
                     </div>
-                </div>
-                <!-- Project 1 -->
-                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image 1">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-                        <p class="text-gray-700 mb-4">This is a short description of project 1. Briefly describe the project.</p>
-                        <a href="https://github.com/yourusername/project1" class="text-blue-500 hover:underline">View on GitHub</a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300" alt="Project Image 2">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
-                        <p class="text-gray-700 mb-4">This is a short description of project 2. Briefly describe the project.</p>
-                        <a href="https://github.com/yourusername/project2" class="text-blue-500 hover:underline">View on GitHub</a>
+                        <a href="https://personality-bot.vercel.app/" class="hover:underline">
+                            <h3 class="text-xl font-semibold mb-2">Personality Bot</h3>
+                        </a>
+                        <p class="text-gray-700 mb-4">
+                            Choose from robot, superhero, pirate, hippie or Yoda personas to give your chatbot responses a distinct style.
+                            This app uses OpenAI's API to generate the responses.
+                        </p>
+                        <a href="https://github.com/michagodfrey/personality-bot/tree/main" class="text-blue-500 hover:underline">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -79,9 +69,9 @@
     <section id="cta" class="my-12 text-center">
         <h2 class="text-2xl font-semibold">Explore More</h2>
         <p class="mt-4 text-lg text-gray-700">Read my latest blog posts or get in touch.</p>
-        <div class="mt-6 space-x-4">
-            <a href="/blog.html" class="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600">Read My Blog</a>
-            <a href="/contact.html" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Contact Me</a>
+        <div class="mt-6 flex flex-col sm:flex-row sm:justify-center">
+            <a href="/blog.html" class="bg-green-500 text-white m-2 px-6 py-2 rounded-md hover:bg-green-600">Read My Blog</a>
+            <a href="/contact.html" class="bg-blue-500 text-white m-2 px-6 py-2 rounded-md hover:bg-blue-600">Contact Me</a>
         </div>
     </section>
 </main>
@@ -98,7 +88,7 @@
             </a>
             <!-- X Icon -->
             <a href="https://x.com/Michael07865192" target="_blank" class="hover:text-blue-500">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 448 512" fill="currentColor"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 448 512" fill="currentColor"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
             </a>
 
             <!-- LinkedIn Icon -->

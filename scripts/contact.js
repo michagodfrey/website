@@ -1,34 +1,74 @@
-const sender = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
+const form = document.getElementById("contact-form");
 const loading = document.getElementById("loading");
+const modal = document.getElementById("modal");
+const modalMessage = document.getElementById("modal-message");
+const modalClose = document.getElementById("modal-close");
 
-// Send email function from https://www.emailjs.com/
-window.onload = function () {
-  document.querySelector("form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    if (sender.value === "" || email.value === "" || message.value === "") {
-      alert("Please complete all fields.");
-    } else {
-      loading.style.display = "flex";
-      // log in https://dashboard.emailjs.com to get service id and user id
-      emailjs.sendForm("service_4dftmcc", "contact_form", this).then(
-        function () {
-          loading.style.display = "none";
-          alert(
-            "Sent! Thank you for the message, I will get back to you shortly."
+// Function to show the modal with a message
+function showModal(message) {
+  modalMessage.textContent = message;
+  modal.classList.remove("hidden");
+}
+
+// Function to hide the modal
+function hideModal() {
+  modal.classList.add("hidden");
+  location.href = "index.html";
+}
+
+// Close modal when clicking the close button
+modalClose.addEventListener("click", hideModal);
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    hideModal();
+  }
+});
+
+// Close modal when pressing the Escape key
+window.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    hideModal();
+  }
+});
+
+// Submitting the form
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Show the loading animation
+  loading.style.display = "flex";
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      loading.style.display = "none";
+      if (response.ok) {
+        showModal(
+          "Sent! ThankS for the message, I will get back to you soon."
+        );
+        form.reset();
+      } else {
+        response.json().then((data) => {
+          showModal(
+            data.message || "Oops! There was a problem submitting your form."
           );
-          location.href = "index.html";
-        },
-        function (error) {
-          loading.style.display = "none";
-          alert(
-            "Well this is embarrassing :( Sorry about that. Please email me at mail@michael-godfrey.com instead.",
-            error
-          );
-          location.href = "index.html";
-        }
+        });
+      }
+    })
+    .catch((error) => {
+      loading.style.display = "none";
+      console.log(error.message);
+      showModal(
+        "Sorry! There is a problem. Please email me at mail@michael-godfrey.com instead."
       );
-    }
-  });
-};
+    });
+});

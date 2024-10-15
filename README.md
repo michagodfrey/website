@@ -1,6 +1,6 @@
 # Files for michael-godfrey.com
 
-These are the files for my website where I host my blog and some links to projects and other achievements.
+These are the files for my website [michael-godfrey.com](https://michael-godfrey.com/), where I host my blog and some links to projects and other achievements.
 
 ## Built with
 
@@ -10,7 +10,7 @@ Blog content hosted on [Hygraph](https://hygraph.com/).
 
 ## AI used
 
-ChatGPT 4o
+OpenAi's ChatGPT 4o and o1-Preview
 
 ## Sources
 

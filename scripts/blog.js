@@ -41,26 +41,29 @@ const getPosts = async () => {
 };
 
 const displayPosts = async () => {
-    const posts = await getPosts();
+  const posts = await getPosts();
 
-    const blogPostsContainer = document.getElementById("blog-posts");
+  // Sort posts by date (newest first)
+  posts.sort((a, b) => new Date(b.node.date) - new Date(a.node.date));
 
-    posts.forEach(({ node }) => {
-        const postElement = document.createElement("div");
-        postElement.classList.add(
-        "bg-white",
-        "rounded-md",
-        "shadow-md",
-        "p-6",
-        "mb-6",
-        "flex"    
-        );
+  const blogPostsContainer = document.getElementById("blog-posts");
 
-        postElement.innerHTML = `
+  posts.forEach(({ node }) => {
+    const postElement = document.createElement("div");
+    postElement.classList.add(
+      "bg-white",
+      "rounded-md",
+      "shadow-md",
+      "p-6",
+      "mb-6",
+      "flex"
+    );
+
+    postElement.innerHTML = `
                 <div class="w-1/2">
                     <h3 class="text-2xl font-bold mt-4">${node.title}</h3>
                     <p class="text-gray-600 text-sm mt-2">${new Date(
-                       node.date
+                      node.date
                     ).toDateString()}</p>
                     <p class="mt-4">${node.excerpt}</p>
                     <a href="/post.html?slug=${
@@ -70,14 +73,14 @@ const displayPosts = async () => {
                 <div class="w-1/2">
                     <a href="/post.html?slug=${node.slug}">
                         <img src="${node.featuredImage.url}" alt="${
-                        node.title
-                        }"class="w-full h-48 object-cover rounded-md">
+      node.title
+    }"class="w-full h-48 object-cover rounded-md">
                     </a>
                 </div>        
         `;
 
-        blogPostsContainer.appendChild(postElement);
-    });
+    blogPostsContainer.appendChild(postElement);
+  });
 };
 
 document.addEventListener("DOMContentLoaded", displayPosts);

@@ -68,7 +68,7 @@ const displayPosts = async () => {
                     <p class="mt-4">${node.excerpt}</p>
                     <a href="/post.html?slug=${
                       node.slug
-                    }" class="text-blue-500 hover:underline mt-4 block">Read More &rarr;</a>
+                    }" class="text-blue-500 font-bold text-xl hover:underline mt-4 block">Read More &rarr;</a>
                 </div>
                 <div class="w-1/2">
                     <a href="/post.html?slug=${node.slug}">

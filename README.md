@@ -10,13 +10,9 @@ JavaScript and GraphQL for fetching blog posts and the contact form.
 
 Blog content hosted on [Hygraph](https://hygraph.com/).
 
-Message form powered by [Getform.io](https://getform.io/).
-
 ## AI used
 
-OpenAi's ChatGPT 4o and o1-Preview.
-
-DALL-E used for generating blog post images.
+OpenAi's ChatGPT for help with writing and image generation.
 
 ## Sources
 

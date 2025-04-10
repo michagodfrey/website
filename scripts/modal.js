@@ -1,16 +1,18 @@
 function openModal() {
-    document.getElementById("emailModal").classList.remove("hidden");
+  const modal = document.getElementById("emailModal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
 }
 
 function closeModal() {
-    document.getElementById("emailModal").classList.add("hidden");
+  const modal = document.getElementById("emailModal");
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
 }
 
 // Close modal when clicking outside
-document
-    .getElementById("emailModal")
-    .addEventListener("click", function (e) {
-    if (e.target === this) {
-        closeModal();
-    }
-    });
+document.getElementById("emailModal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});

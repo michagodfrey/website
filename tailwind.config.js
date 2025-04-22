@@ -18,7 +18,8 @@ module.exports = {
     "hover:text-blue-500", // Hover color for icons
     "mb-6",
     "w-1/2",
-    "h-64"
+    "h-64",
+    "mr-6"
   ],
 };
 

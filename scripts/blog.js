@@ -65,7 +65,7 @@ const displayPosts = async () => {
                     <p class="text-gray-600 text-sm mt-2">${new Date(
                       node.date
                     ).toDateString()}</p>
-                    <p class="mt-4">${node.excerpt}</p>
+                    <p class="mt-4 mr-6">${node.excerpt}</p>
                     <a href="/post.html?slug=${
                       node.slug
                     }" class="text-blue-500 font-bold text-xl hover:underline mt-4 block">Read More &rarr;</a>
